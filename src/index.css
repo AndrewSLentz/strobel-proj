@@ -1,0 +1,205 @@
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 100;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-ultralight-webfont.woff"); }
+/* Regular */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 400;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff"); }
+/* Bold */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 700;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff"); }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "San Francisco", "Helvetica Neue", sans-serif;
+  font-size: 15px; }
+
+body {
+  font-family: "San Francisco", "Helvetica Neue", sans-serif;
+}
+
+.containerL {
+  width: 50%;
+  height: 100%;
+  background-color: #1E65F7;
+  float: left;
+  position: fixed;
+  display: inline-block;
+  min-height: 490px;
+}
+
+.containerR {
+  width: 50%;
+  height: 900px;
+  background-color: #FFF;
+  float: right;
+}
+
+@media screen and (max-width: 768px) {
+  .containerL {
+    display: block;
+    position: relative;
+    width: 100%;
+  }
+  .containerR {
+    display: block;
+    position: relative;
+    width: 100%;
+  }
+}
+
+.award {
+  position: relative;
+  top: 20px;
+}
+
+.award a:hover {
+  opacity: .8;
+}
+
+.info-main {
+  position: relative;
+  top: 50%;
+  transform: translateY(-60%);
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .info-main{
+    width: 100%;
+    top: 0;
+    transform: translateY(0);
+  }
+}
+
+.info-headshot, .info-headshot-img {
+  margin: auto;
+  width: 170px;
+  height: 170px;
+  border-radius: 200px;
+  box-shadow: 0 5px 10px #0A4DD9;
+}
+
+.info-tag {
+  margin: 30px auto auto auto;
+  opacity: .6;
+  text-align: center;
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.info-elevator-text {
+  margin: 10px auto auto auto;
+  padding: 0 20px;
+  color: white;
+  text-align: center;
+  font-size: 28px;
+  max-width: 460px;
+}
+
+@media (max-width: 420px) {
+  .info-elevator-text {
+    font-size: 22px;
+  }
+}
+
+.info-elevator-link {
+  padding: 0 4px 2px 4px;
+  color: white;
+  border-bottom: 2px solid #A3C0FC;
+  text-decoration: none;
+  word-wrap: break-word;
+}
+
+.info-elevator-link:hover {
+  background-color: #0A4DD9;
+  border-color: #A3C0FC
+}
+
+.info-button-dark {
+  color: white;
+  background-color: #1560FB;
+  width: 200px;
+  padding: 11px 24px;
+  position: relative;
+  margin: 40px auto auto auto;
+  display: inline-block;
+  border: 2px solid white;
+  border-radius: 3px;
+  font-family: "San Francisco", "Helvetica Neue", sans-serif;
+  font-weight: 700;
+  line-height: 22px;
+  text-decoration: none;
+  text-align: left;
+}
+
+.info-button-dark::after {
+  float: right;
+  content: "\f061";
+  font-family: "FontAwesome";
+}
+
+.info-button-dark:hover, .info-button-dark:hover::after {
+  color: #1560FB;
+  background-color: white;
+}
+
+@media (max-width: 768px) {
+  .info-button-dark {
+    margin: 30px auto auto auto;
+  }
+}
+
+.info-footer-kitchener {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  height: 27px;
+}
+
+.info-footer-kitchener-img {
+  float: left;
+}
+
+.info-footer-kitchener-text {
+  float: left;
+  margin: 0 0 0 10px;
+  padding-top: 7px;
+  font-size: 12px;
+  color: white;
+  opacity: 0.6;
+  text-decoration: none;
+}
+
+.info-footer-kitchener-text:hover {
+opacity: 1;
+}
+
+.info-footer-social {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  height: 27px;
+}
+
+.info-footer-social a:hover {
+  opacity: 0.6;
+}
+
+.info-footer-social a{
+  margin-left: 10px;
+  padding-top: 4px;
+  color: white;
+  text-decoration: none;
+  float: right;
+  height: inherit;
+  bottom: inherit;
+}
