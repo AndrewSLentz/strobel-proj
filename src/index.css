@@ -40,8 +40,6 @@ body {
   float: right;
   display: inline-block;
   padding: 20px;
-  overflow-y: scroll;
-  overflow-x: hidden;
 }
 
 @media screen and (max-width: 768px) {
@@ -54,7 +52,6 @@ body {
     display: block;
     position: relative;
     width: 100%;
-    position: fixed;
   }
 }
 
@@ -218,7 +215,7 @@ opacity: 1;
 
 .main-tag {
   color: #1560FB;
-  margin: 0 0 20px 0;
+  margin: 20px 0 20px 0;
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 1px;
@@ -321,5 +318,21 @@ a {
 }
 
 .main-container-resume {
-  margin-bottom: 80px;
+  margin-bottom: 40px;
+}
+
+.main-project-title:hover, .main-resume:hover {
+  opacity: .6;
+}
+
+@media screen and (max-width: 768px) {
+  .containerR {
+    display: block;
+    padding: 20px;
+    width: 100%;
+    margin-left: 30px;
+  }
+  .containerR-about, .main-container-projects, .main-container-resume, .main-container-clients, .main-container-experience {
+    margin-left: 40px;
+  }
 }
