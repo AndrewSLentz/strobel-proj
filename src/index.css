@@ -206,7 +206,7 @@ opacity: 1;
   bottom: inherit;
 }
 
-.main-container, .main-container-about, .main-container-projects, .main-container-clients, .main-container-experience, .main-container-resume {
+.main-container, .containerR-about, .main-container-projects, .main-container-clients, .main-container-experience, .main-container-resume {
   display: block;
   clear: both;
   margin: 40px 0 0 0;
