@@ -34,10 +34,14 @@ body {
 }
 
 .containerR {
-  width: 50%;
+  width: 45%;
   height: 900px;
   background-color: #FFF;
   float: right;
+  display: inline-block;
+  padding: 20px;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 @media screen and (max-width: 768px) {
@@ -50,6 +54,7 @@ body {
     display: block;
     position: relative;
     width: 100%;
+    position: fixed;
   }
 }
 
@@ -202,4 +207,119 @@ opacity: 1;
   float: right;
   height: inherit;
   bottom: inherit;
+}
+
+.main-container, .main-container-about, .main-container-projects, .main-container-clients, .main-container-experience, .main-container-resume {
+  display: block;
+  clear: both;
+  margin: 40px 0 0 0;
+  overflow: auto;
+}
+
+.main-tag {
+  color: #1560FB;
+  margin: 0 0 20px 0;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.main-copy {
+  line-height: 26px;
+}
+
+p {
+  margin: 0;
+  color: #313131;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.main-list {
+  clear: both;
+  padding: 0;
+  list-style-type: none;
+}
+
+.main-list-item {
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.main-list-item::before {
+  position: relative;
+  bottom: 0.2ex;
+  margin-right: 20px;
+  content: "\f105";
+  font-family: "FontAwesome";
+  color: #1560FB;
+}
+
+.main-project-first {
+  margin-bottom: 20px;
+  width: 75%;
+}
+
+.main-project-title {
+  margin: 20px 0 10px 0;
+}
+
+.main-project-title:first-child {
+  margin-top: 3px;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+a {
+  color: #313131;
+  text-decoration: none;
+}
+
+.main-project-title::after, .main-resume::after {
+  position: relative;
+  bottom: .2ex;
+  margin-left: 20px;
+  content: "\f061";
+  font-family: "FontAwesome";
+  color: #1560FB;
+  font-size: 12px;
+}
+
+.main-project-description {
+  margin: 0;
+  line-height: 26px;
+}
+
+.main-project {
+  margin-bottom: 20px;
+  width: 75%;
+}
+
+.main-experience  {
+  margin-bottom: 20px;
+  height: 40px;
+}
+
+.main-experience-info {
+  float: left;
+}
+
+.main-experience-info-company {
+  display: block;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.main-experience-year {
+  float: right;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.main-container-resume {
+  margin-bottom: 80px;
 }
